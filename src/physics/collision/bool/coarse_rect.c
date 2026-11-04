@@ -1,10 +1,10 @@
 #include "coarse_rect.h"
 
-#include "../../../basics/vector/2d/vector2d.h"
+#include <basics/vector/2d/vector2d.h>
 
 #ifdef DEBUG
 
-#include "../../../basics/safe/float.h"
+#include <basics/safe/float.h>
 
 #endif
 

@@ -1,7 +1,7 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "../../position/free_position.c"
+#include <position/free_position.h>
 
 #include <stdint.h>
 

@@ -1,7 +1,7 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
-#include "../../position/free_position.h"
+#include <position/free_position.h>
 
 #include <stdint.h>
 

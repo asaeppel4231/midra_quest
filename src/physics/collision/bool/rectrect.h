@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#include "../../../basics/shapes/rectangle/rectangle.h"
+#include <basics/shapes/rectangle/rectangle.h>
 
 bool coarse_rect_rect_collision(rect_t rect1, rect_t rect2);
 

@@ -4,7 +4,7 @@
 
 #ifdef DEBUG
 
-#include "../../safe/float.h"
+#include <safe/float.h>
 #include <assert.h>
 
 #endif

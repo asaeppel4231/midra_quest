@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#include "../vector/2d/vector2d.h"
+#include <vector/2d/vector2d.h>
 
 /* Free modifyable position */
 
