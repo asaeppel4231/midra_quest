@@ -6,3 +6,11 @@ compile_commands.json
 
 # clangd background noise
 .cache
+
+
+# Added by cargo
+
+/target
+
+# Contains tracks with copyright
+soundtest
