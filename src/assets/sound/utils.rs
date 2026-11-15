@@ -1,7 +1,7 @@
 use crate::basics::safe::float::{safe_add, safe_div, safe_mul, safe_sub};
 use std::f32::consts::FRAC_PI_2;
 
-/* Following functions are AI generated and modified by me, except the last that I wrote on my own. */
+/* Following functions are AI generated and modified by me, except the last 2 ones that I wrote on my own. */
 
 #[inline]
 pub fn get_gain_by_pan(pan: f32) -> [f32; 2] {
@@ -38,4 +38,16 @@ pub fn linear_interpolation(frac: f32, sample_1: f32, sample_2: f32) -> f32 {
         sample_1,
         safe_mul(0.0, frac, safe_sub(0.0, sample_2, sample_1)),
     )
+}
+
+#[inline]
+pub fn linear_stereo_interpolation(
+    frac: f32,
+    first_sample: [f32; 2],
+    next_sample: [f32; 2],
+) -> [f32; 2] {
+    [
+        linear_interpolation(frac, first_sample[0], next_sample[0]),
+        linear_interpolation(frac, first_sample[1], next_sample[1]),
+    ]
 }
