@@ -13,10 +13,17 @@ pub enum StreamState {
 }
 
 #[derive(Debug, Clone)]
+pub enum DataSource {
+    WAVFile,
+    OGGFile,
+}
+
+#[derive(Debug, Clone)]
 pub struct AudioSource {
     pub data: AudioData,
     pub st_state: StreamState,
     pub lp_state: LoopState,
     pub current_pos: f32,
+    pub source_type: DataSource,
     /* pub source */
 }
